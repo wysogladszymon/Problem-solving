@@ -44,7 +44,6 @@ int main()
     
     std::string word;
 
-    // ustawienie miejsc niedostepnych na 1
     for (int i = 0; i < n; i++)
     {
         std::cin >> word;
