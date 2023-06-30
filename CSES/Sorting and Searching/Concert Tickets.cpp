@@ -2,6 +2,7 @@
 
 typedef long long ll;
 
+//NOT READYYYY YETTTT
 int binary(int x, std::vector<int> v)
 {
     int l = 0, p = v.size(), m;
