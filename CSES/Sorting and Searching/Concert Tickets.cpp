@@ -2,22 +2,6 @@
 
 typedef long long ll;
 
-//NOT READYYYY YETTTT
-int binary(int x, std::vector<int> v)
-{
-    int l = 0, p = v.size(), m;
-    while(l < p)
-    {
-        m = (l + p) / 2;
-        if(x == v[m])
-            return m;
-        if(x < v[m])
-        {
-            p = m;
-        }
-        
-    }
-}
 
 int main()
 {
@@ -25,7 +9,7 @@ int main()
 
     int n, m, k;
     std::cin >> n >> m;
-    std::vector<int> tickets, people;
+    std::vector<int> tickets;
 
     for (int i = 0; i < n; i++)
     {
@@ -37,6 +21,20 @@ int main()
     for (int i = 0; i < m; i++)
     {
         std::cin >> k;
-        people.push_back(k);
+        int j = 0;
+        int z = 0;
+        while(k >= tickets[j] && j < n)
+        {
+            if(tickets[j] > 0)
+            {
+                z = j; 
+            }
+            ++j;
+        }
+        /*std::cout << "wektor to: ";
+        for(auto a : tickets)
+            std::cout << a<< " ";
+        */std::cout << tickets[z]<<std::endl;
+        tickets[z] = -1; //chosen
     }
 }
