@@ -64,8 +64,8 @@ void palindrom (std::string word)
 
 int main()
 {
-    std::string wyraz;
-    std::cin >> wyraz;
-    palindrom(wyraz);
+    std::string word;
+    std::cin >> word;
+    palindrom(word);
     return 0;
 }

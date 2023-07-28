@@ -7,7 +7,7 @@ typedef long long ll;
 
 
 
-void coin(ll x, ll y)
+void f(ll x, ll y)
 {
     if((x+y)%3==0)
     {
@@ -31,6 +31,6 @@ int main()
     for (ll i = 0; i < in; i++)
     {
         std::cin >> x >> y;
-        coin(x, y);
+        f(x, y);
     }
 }

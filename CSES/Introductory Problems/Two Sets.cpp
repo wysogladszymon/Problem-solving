@@ -15,7 +15,7 @@ void sets(ll n)
     else 
     {
         std::cout << "YES" << std::endl;
-        if(n %2 == 0) //gdy parzysta
+        if(n %2 == 0) 
         {
             std::cout << n / 2<<std::endl;
             for (int i = 1; i < n; i+=4)

@@ -2,11 +2,11 @@
 
 typedef long long ll;
 
-bool vis[7][7]; // [y][x]; od 0 0 => 6 0
+bool vis[7][7]; 
 int counter = 0;
 std::string s;
 
-bool empty(int x, int y) //zwraca true, gdy wart jest wolna
+bool empty(int x, int y) 
 {
     return x >= 0 && x < 7 && y >= 0 && y < 7 && !vis[y][x]; 
 }

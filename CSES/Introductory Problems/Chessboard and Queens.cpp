@@ -9,7 +9,7 @@ int column[n];
 int diag1[2 * n - 1];
 int diag2[2 * n - 1];
 
-void backtrack(int y = 0)
+void f(int y = 0)
 {
     if (y == n)
         count++;
@@ -21,7 +21,7 @@ void backtrack(int y = 0)
                 continue;
 
             column[x] = diag1[x + y] = diag2[n - 1 + x - y] = 1;
-            backtrack(y + 1);
+            f(y + 1);
             column[x] = diag1[x + y] = diag2[n - 1 + x - y] = 0;
         }
     }
@@ -54,7 +54,7 @@ int main()
                 mines[i][j] = 0;
     }
 
-    backtrack();
+    f();
 
     std::cout << count;
 }
