@@ -30,7 +30,6 @@ int main()
         else
         {
             mp.insert(make_pair(rest, 1));
-
         }
     }
 
