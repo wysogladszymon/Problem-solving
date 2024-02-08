@@ -1,5 +1,4 @@
-Problemset:
+## Algorithms
+Here are some of my sollutions to <a href="https://leetcode.com/problemset/algorithms/">Leetcode</a> and <a href="https://cses.fi">Cses.fi</a> problemset.
 
-https://cses.fi
-
-
+I practice here mainly my C++ skills. 
